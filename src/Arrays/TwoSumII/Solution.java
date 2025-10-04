@@ -1,0 +1,22 @@
+package Arrays.TwoSumII;
+
+public class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+        int start = 0;
+        int end = numbers.length-1;
+        int[] result = new int[2];
+        while(start < end){
+            int sum = numbers[start] + numbers[end];
+            if(target == sum){
+                result[0] = start + 1;
+                result[1] = end + 1;
+                break;
+            }else if (target > sum){
+                start++;
+            }else if(target < sum){
+                end--;
+            }
+        }
+        return result;
+    }
+}
