@@ -1,5 +1,9 @@
 package LinkedListAndMatrices.ReorderList;
 
+class ListNode{
+    int val;
+    ListNode next;
+}
 public class Solution {
     public void reorderList(ListNode head) {
 
